@@ -1,12 +1,7 @@
 const path = require('node:path');
 
 const express = require('express');
-const bodyParser = require('body-parser');
-const cookieParser = require('cookie-parser');
-const expressSession = require('express-session');
 const serveStatic = require('serve-static');
-const MongoStore = require('connect-mongo');
-const mongoose = require('mongoose');
 const morgan = require('morgan');
 
 const app = express();
