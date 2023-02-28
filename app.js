@@ -2,6 +2,7 @@ const path = require('node:path');
 
 const express = require('express');
 const serveStatic = require('serve-static');
+const favicon = require('serve-favicon')
 const morgan = require('morgan');
 
 const indexRoutes = require('./routes/index');
@@ -17,6 +18,7 @@ async function main() {
     
     app.use(morgan('dev'));
     app.use(serveStatic(path.join(__dirname, 'public')));
+    app.use(favicon(path.join(__dirname, 'public', 'favicon.png')));
     
     app.use('/', indexRoutes);
 

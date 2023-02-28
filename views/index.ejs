@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <title>Show IP</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    <h1 class="grays"><%= ip %></h1>
-</body>
-</html>
+<%- include('includes/hstart', {title}) %>
+    <link rel="icon" href="/favicon.png">
+    <%- include('includes/hcss', { cssfiles: [
+        "https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css",
+        "/css/style.css"] }) %>
+<%- include('includes/hmid') %>
+<%- include('includes/hbackground') %>
+
+<main class="calculator-wrapper">
+    <h1 class="mint"><%= ip %></h1>
+</main>
+
+<%- include('includes/hend') %>

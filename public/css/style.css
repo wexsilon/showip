@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Rocher';
-  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+  src: url(../font/RocherColorGX.woff2);
 }
 
 body {
@@ -12,35 +12,52 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #AB61E4;
+  min-height: 100vh;
+  overflow: hidden;
+  color: #fff;
 }
 
 h1 {
   margin: 0;
 }
 
-@font-palette-values --Grays {
-  font-family: Rocher;
-  base-palette: 9;
-}
-
-@font-palette-values --Purples {
-  font-family: Rocher;
-  base-palette: 6;
-}
-
 @font-palette-values --Mint {
   font-family: Rocher;
   base-palette: 7;
 }
-
-.grays {
-  font-palette: --Grays;
-}
-
-.purples {
-  font-palette: --Purples;
-}
-
 .mint {
   font-palette: --Mint;
+}
+
+.calculator-wrapper {
+  position: relative;
+}
+
+.bg-item {
+  position: absolute;
+}
+
+#bg-1 {
+  filter: blur(10px);
+}
+
+#bg-2 {
+  filter: blur(36px);
+}
+
+#bg-4 {
+  filter: blur(50px);
+}
+
+#bg-6 {
+  filter: blur(40px);
+}
+
+#bg-7 {
+  filter: blur(30px);
+}
+
+#bg-9 {
+  filter: blur(20px);
 }
